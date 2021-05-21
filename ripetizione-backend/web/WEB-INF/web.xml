@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type >
+        <location>/ErrorServlet</location>
+    </error-page>
+
+    <env-entry>
+        <env-entry-name>url</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>jdbc:postgresql://localhost:5432/tweb</env-entry-value>
+    </env-entry>
+
+    <env-entry>
+        <env-entry-name>user</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>tweb</env-entry-value>
+    </env-entry>
+
+    <env-entry>
+        <env-entry-name>password</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>tweb</env-entry-value>
+    </env-entry>
+
+    <env-entry>
+        <env-entry-name>TTL</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>60</env-entry-value>
+    </env-entry>
+
+
+</web-app>
